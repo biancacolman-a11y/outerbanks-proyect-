@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outer Banks | Los Pogues</title>
+
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Nuestros archivos -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + MENÚ DE NAVEGACIÓN ===== -->
+  <header class="barra">
+    <span class="marca">Outer Banks</span>
+
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#tripulacion">Tripulación</a>
+      <a href="#temporadas">Temporadas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#ayuda">Ayuda</a>
+    </nav>
+
+    <button id="btnTema" class="btn-tema">Modo oscuro</button>
+  </header>
+
+  <main>
+
+    <!-- ===== SECCIÓN PRINCIPAL ===== -->
+    <section id="inicio" class="portada">
+      <h1>Los Pogues<br>van por el oro</h1>
+      <p class="bajada">
+        Cuatro amigos del lado humilde de la isla, un mapa viejo
+        y una familia rica que también quiere el tesoro.
+      </p>
+
+      <div class="acciones">
+        <button id="btnDescubri" class="btn-principal">Descubrí más</button>
+        <button id="btnInfo" class="btn-secundario">Mostrar / ocultar información</button>
+      </div>
+
+      <p id="mensaje" class="mensaje" aria-live="polite"></p>
+
+      <div id="infoExtra" class="info-extra">
+        <h2>La isla, dos bandos</h2>
+        <p>
+          En Outer Banks la gente se divide entre los <strong>Pogues</strong>,
+          que viven del lado trabajador, y los <strong>Kooks</strong>,
+          que tienen las casas grandes y los clubes privados.
+          La serie sigue a un grupo de Pogues que se mete en una
+          búsqueda de tesoro con todo en contra.
+        </p>
+      </div>
+    </section>
+
+    <svg class="ola" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 30 Q 75 0 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30 T 1050 30 T 1200 30 V60 H0 Z"/>
+    </svg>
+
+    <!-- ===== SECCIÓN DE CONTENIDO 1: TRIPULACIÓN ===== -->
+    <section id="tripulacion" class="banda">
+      <h2>La tripulación</h2>
+      <ul class="tripulacion">
+        <li>
+          <strong>John B</strong>
+          <span>El que persigue el mapa. Terco y leal.</span>
+        </li>
+        <li>
+          <strong>JJ</strong>
+          <span>El más impulsivo. Siempre tiene un plan, casi nunca uno bueno.</span>
+        </li>
+        <li>
+          <strong>Sarah Cameron</strong>
+          <span>Nació del lado rico de la isla, pero eligió a los Pogues.</span>
+        </li>
+        <li>
+          <strong>Kiara</strong>
+          <span>Conoce el agua mejor que nadie y no se deja llevar por la corriente.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== SECCIÓN DE CONTENIDO 2: TEMPORADAS ===== -->
+    <section id="temporadas" class="temporadas">
+      <h2>Temporadas</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Temporada 1</h3>
+          <p>Todo empieza con un motor de avión hundido y la búsqueda del oro del Royal Merchant.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Temporada 2</h3>
+          <p>La cruz de Santo Domingo lleva a los Pogues hasta las Bahamas.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Temporada 3</h3>
+          <p>La isla de Kildara y una ciudad perdida cambian las reglas del juego.</p>
+        </article>
+      </div>
+    </section>
+
+       <!-- ===== SECCIÓN DE CONTENIDO 3: GALERÍA (IMÁGENES) ===== -->
+    <section id="galeria" class="galeria">
+      <h2>Galería</h2>
+      <div class="grid-galeria">
+        <figure>
+          <img src="john-b.png" alt="John B">
+          <figcaption>John B</figcaption>
+        </figure>
+        <figure>
+          <img src="jj.png" alt="JJ">
+          <figcaption>JJ</figcaption>
+        </figure>
+        <figure>
+          <img src="sarah.png" alt="Sarah">
+          <figcaption>Sarah</figcaption>
+        </figure>
+        <figure>
+          <img src="kiara.png" alt="Kiara">
+          <figcaption>Kiara</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN DE AYUDA O SUGERENCIA (ASISTENTE DE IA) ===== -->
+    <section id="ayuda" class="ayuda">
+      <h2>Ayuda o sugerencia</h2>
+      <p class="ayuda-intro">
+        ¿Dudas sobre la serie o sobre la página? Preguntale a nuestro
+        asistente virtual.
+      </p>
+
+      <div id="chatMensajes" class="chat-mensajes" aria-live="polite">
+        <div class="msg ia">¡Hola! Soy el asistente de los Pogues. Preguntame lo que quieras sobre Outer Banks.</div>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <label for="chatInput" class="solo-lector">Tu pregunta</label>
+        <input id="chatInput" type="text" placeholder="Escribí tu pregunta..." autocomplete="off" required>
+        <button type="submit" id="chatEnviar" class="btn-principal">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+  </footer>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
